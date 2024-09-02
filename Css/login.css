@@ -1,0 +1,101 @@
+:root{
+    --primary-color: radial-gradient( circle farthest-corner at 10% 20%,  rgba(93,167,139,1) 0%, rgba(45,75,63,1) 100.2% );
+    --color: white;
+    --text-color: rgba(93,167,139,1);
+}
+html,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-weight: lighter;
+    font-size: 62.5%;
+}
+body{
+    min-height: 100vh;
+    width: 100vw;
+    background-image: var(--primary-color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+form{
+    max-width: 80%;
+    width: 65rem;
+    background-color: var(--color);
+    border-left: 1rem solid rgba(0, 0, 0, 0.616);
+}
+fieldset{
+    margin: 0;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    padding: 6rem 5rem;
+}
+legend{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    letter-spacing: .06rem;
+    padding-top: 6rem;
+    padding-left: 0;
+    color: var(--text-color);
+    font-weight: bold;
+}
+label{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: uppercase;
+}
+input{
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: .05rem solid var(--text-color);
+    outline: 0;
+    font-size: 1.9rem;
+    transition: padding-left -0.8s;
+}
+.form-div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+.btn{
+    background-color: var(--text-color);
+    color: var(--color);
+    padding: 1.3rem 2rem;
+    border: none;
+    border-radius: 50rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .09rem;
+    outline: 0;
+    cursor: pointer;
+}
+.cadastro{
+    margin-left: 2rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.forgot-password{
+    font-size: 1.6rem;
+    color: rgba(58, 40, 255, 0.575);
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: right;
+}
+input:focus{
+    padding-left: 1rem;
+    outline: 2px solid var(--text-color);
+}
+
